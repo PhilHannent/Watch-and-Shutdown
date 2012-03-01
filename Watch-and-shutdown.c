@@ -28,7 +28,7 @@
 
 /* Process information from inotify_event structure */
 static void             
-processInotifyEvent(struct inotify_event *i)
+processInotifyEvent(struct inotify_event *i, int *time_set, time_t* )
 {
     printf("    wd =%2d; ", i->wd);
     if (i->cookie > 0)
